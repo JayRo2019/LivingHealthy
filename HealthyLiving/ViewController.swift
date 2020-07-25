@@ -14,7 +14,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // label and text fields
+    @IBOutlet weak var appLabel: UILabel!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    // code for signInClicked button
+    @IBAction func signInClicked(_ sender: Any) {
+        
+        // TEST SEGUE
+        performSegue(withIdentifier: "toProfileVC", sender: nil)
+    }
+    
+    // code for signUpClicked button
+    @IBAction func signUpClicked(_ sender: Any) {
+        
+        
+    }
+    
+    
 
 }
 

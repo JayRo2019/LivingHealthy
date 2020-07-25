@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,9 @@
 		A91278AD24CC753900821CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91278AB24CC753900821CB1 /* Main.storyboard */; };
 		A91278AF24CC753E00821CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91278AE24CC753E00821CB1 /* Assets.xcassets */; };
 		A91278B224CC753E00821CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91278B024CC753E00821CB1 /* LaunchScreen.storyboard */; };
-		A9934AED24CC768A006FA39A /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = A9934AEC24CC768A006FA39A /* GoogleService-Info (1).plist */; };
+		A9934AF124CC8D1C006FA39A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9934AF024CC8D1C006FA39A /* GoogleService-Info.plist */; };
+		A9934AF324CC925A006FA39A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AF224CC925A006FA39A /* ProfileViewController.swift */; };
+		A9934AF524CC92C0006FA39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AF424CC92C0006FA39A /* SettingsViewController.swift */; };
 		E126C193712535B0973517A4 /* Pods_HealthyLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710437BDF5E38CE689D42D5C /* Pods_HealthyLiving.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +30,9 @@
 		A91278AE24CC753E00821CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91278B124CC753E00821CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A91278B324CC753E00821CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9934AEC24CC768A006FA39A /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		A9934AF024CC8D1C006FA39A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9934AF224CC925A006FA39A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A9934AF424CC92C0006FA39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B5E4F5752D7ABDE52CBA7DBE /* Pods-HealthyLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLiving.release.xcconfig"; path = "Target Support Files/Pods-HealthyLiving/Pods-HealthyLiving.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,11 +72,13 @@
 				A91278A524CC753900821CB1 /* AppDelegate.swift */,
 				A91278A724CC753900821CB1 /* SceneDelegate.swift */,
 				A91278A924CC753900821CB1 /* ViewController.swift */,
+				A9934AF224CC925A006FA39A /* ProfileViewController.swift */,
+				A9934AF424CC92C0006FA39A /* SettingsViewController.swift */,
 				A91278AB24CC753900821CB1 /* Main.storyboard */,
 				A91278AE24CC753E00821CB1 /* Assets.xcassets */,
 				A91278B024CC753E00821CB1 /* LaunchScreen.storyboard */,
 				A91278B324CC753E00821CB1 /* Info.plist */,
-				A9934AEC24CC768A006FA39A /* GoogleService-Info (1).plist */,
+				A9934AF024CC8D1C006FA39A /* GoogleService-Info.plist */,
 			);
 			path = HealthyLiving;
 			sourceTree = "<group>";
@@ -91,7 +97,6 @@
 				3CCD28E11642436CB185051C /* Pods-HealthyLiving.debug.xcconfig */,
 				B5E4F5752D7ABDE52CBA7DBE /* Pods-HealthyLiving.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +128,9 @@
 		A912789A24CC753900821CB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					toQuiz,
+				);
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = HobbyHacksHackathon;
@@ -158,7 +166,7 @@
 				A91278B224CC753E00821CB1 /* LaunchScreen.storyboard in Resources */,
 				A91278AF24CC753E00821CB1 /* Assets.xcassets in Resources */,
 				A91278AD24CC753900821CB1 /* Main.storyboard in Resources */,
-				A9934AED24CC768A006FA39A /* GoogleService-Info (1).plist in Resources */,
+				A9934AF124CC8D1C006FA39A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +221,8 @@
 			files = (
 				A91278AA24CC753900821CB1 /* ViewController.swift in Sources */,
 				A91278A624CC753900821CB1 /* AppDelegate.swift in Sources */,
+				A9934AF324CC925A006FA39A /* ProfileViewController.swift in Sources */,
+				A9934AF524CC92C0006FA39A /* SettingsViewController.swift in Sources */,
 				A91278A824CC753900821CB1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
