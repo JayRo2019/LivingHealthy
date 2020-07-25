@@ -8,12 +8,29 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+class ProfileViewController: UIViewController, CanReceive {
+    
+    var profileData:[String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // set profile VC as the delegate
+        
+    }
+    //get the destination object
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToQuiz" {
+            let destinationVC = segue.destination as! QuizViewController
+            destinationVC.delegate = self
+        }
+    }
+    
+    
+    //getting answer data from QuizVC
+    func dataReceived(text: [String]) {
+        profileData = text
+        print(profileData)
     }
     
 

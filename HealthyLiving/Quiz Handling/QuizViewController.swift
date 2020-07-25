@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol CanReceive {
+    func dataReceived(text: [String])
+}
+
 class QuizViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
+    var delegate:CanReceive?
     var questionModel:Questions!
     var questionNumber:Int!
     
@@ -61,11 +66,9 @@ class QuizViewController: UIViewController {
         
         //check if we're at last question
         //dismiss view controller
-        if (questionNumber >= questionModel.questions.count) {
-            print(questionModel.answers)
-            
+        if (questionNumber >= questionModel.questions.count) {            
             //pass the answer data to profile VC
-            
+            delegate?.dataReceived(text: questionModel.answers)
             
             //dismiss QuizVC
             self.dismiss(animated: true, completion: nil)
@@ -77,8 +80,7 @@ class QuizViewController: UIViewController {
         
         
     }
-    //make an array with the questions
-    //store answers
+
     
 
     /*

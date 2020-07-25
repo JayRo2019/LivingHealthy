@@ -78,10 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				E2A3A6A724CCE53900393722 /* Quiz Handling */,
+				A9934AF224CC925A006FA39A /* ProfileViewController.swift */,
 				A91278A524CC753900821CB1 /* AppDelegate.swift */,
 				A91278A724CC753900821CB1 /* SceneDelegate.swift */,
 				A91278A924CC753900821CB1 /* ViewController.swift */,
-				A9934AF224CC925A006FA39A /* ProfileViewController.swift */,
 				A9934AF624CCC7B4006FA39A /* WorkoutViewController.swift */,
 				A9934AF824CCCA72006FA39A /* MealsViewController.swift */,
 				A9934AF424CC92C0006FA39A /* SettingsViewController.swift */,
