@@ -108,6 +108,67 @@
             </objects>
             <point key="canvasLocation" x="2835" y="76"/>
         </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="R4k-nY-CL8">
+            <objects>
+                <viewController id="xeo-8v-ILs" customClass="QuizViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ch8-SA-EyG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-c0-uxa">
+                                <rect key="frame" x="0.0" y="40" width="414" height="60"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stX-eJ-wgg">
+                                <rect key="frame" x="114.5" y="560" width="185" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="xeo-8v-ILs" eventType="touchUpInside" id="ebb-Du-7yB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-uU-0L6">
+                                <rect key="frame" x="0.0" y="170" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfq-Xg-soC">
+                                <rect key="frame" x="20" y="265" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yaw-c0-uxa" firstAttribute="top" secondItem="Br2-zc-ZEq" secondAttribute="top" constant="40" id="E4w-kj-kvL"/>
+                            <constraint firstItem="Yaw-c0-uxa" firstAttribute="leading" secondItem="Br2-zc-ZEq" secondAttribute="leading" id="KkQ-2l-Tjc"/>
+                            <constraint firstItem="cfq-Xg-soC" firstAttribute="top" secondItem="0Lb-uU-0L6" secondAttribute="bottom" constant="65" id="UW2-RV-sxf"/>
+                            <constraint firstItem="stX-eJ-wgg" firstAttribute="centerX" secondItem="ch8-SA-EyG" secondAttribute="centerX" id="adp-7r-6L3"/>
+                            <constraint firstItem="0Lb-uU-0L6" firstAttribute="top" secondItem="Yaw-c0-uxa" secondAttribute="bottom" constant="70" id="cfZ-2w-xvy"/>
+                            <constraint firstItem="0Lb-uU-0L6" firstAttribute="leading" secondItem="Br2-zc-ZEq" secondAttribute="leading" id="fQ3-uJ-d95"/>
+                            <constraint firstItem="Br2-zc-ZEq" firstAttribute="trailing" secondItem="0Lb-uU-0L6" secondAttribute="trailing" id="kR3-kT-8jD"/>
+                            <constraint firstItem="Br2-zc-ZEq" firstAttribute="trailing" secondItem="Yaw-c0-uxa" secondAttribute="trailing" id="lJ3-Cs-ZNo"/>
+                            <constraint firstItem="cfq-Xg-soC" firstAttribute="leading" secondItem="Br2-zc-ZEq" secondAttribute="leading" constant="20" id="psr-iL-772"/>
+                            <constraint firstItem="Br2-zc-ZEq" firstAttribute="trailing" secondItem="cfq-Xg-soC" secondAttribute="trailing" constant="20" id="teG-Y2-8nL"/>
+                            <constraint firstItem="Br2-zc-ZEq" firstAttribute="bottom" secondItem="stX-eJ-wgg" secondAttribute="bottom" constant="200" id="v5Z-pm-4u1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Br2-zc-ZEq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pp5-K0-1Fz"/>
+                    <connections>
+                        <outlet property="nextButton" destination="stX-eJ-wgg" id="Bfg-Y8-flC"/>
+                        <outlet property="questionLabel" destination="0Lb-uU-0L6" id="VVD-xk-j8B"/>
+                        <outlet property="textField" destination="cfq-Xg-soC" id="Ctz-rp-E3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deK-E7-Ahx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="-598"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="sof-g0-X1q">
             <objects>
@@ -151,6 +212,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Take Quiz"/>
+                                <connections>
+                                    <segue destination="xeo-8v-ILs" kind="show" id="nnr-o9-ox7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFB-P4-5S8">
                                 <rect key="frame" x="164" y="67" width="87" height="51"/>
