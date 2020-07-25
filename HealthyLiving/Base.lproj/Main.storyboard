@@ -108,6 +108,35 @@
             </objects>
             <point key="canvasLocation" x="2835" y="76"/>
         </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="R4k-nY-CL8">
+            <objects>
+                <viewController id="xeo-8v-ILs" customClass="QuizViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ch8-SA-EyG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-c0-uxa">
+                                <rect key="frame" x="0.0" y="40" width="414" height="60"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yaw-c0-uxa" firstAttribute="top" secondItem="Br2-zc-ZEq" secondAttribute="top" constant="40" id="E4w-kj-kvL"/>
+                            <constraint firstItem="Yaw-c0-uxa" firstAttribute="leading" secondItem="Br2-zc-ZEq" secondAttribute="leading" id="KkQ-2l-Tjc"/>
+                            <constraint firstItem="Br2-zc-ZEq" firstAttribute="trailing" secondItem="Yaw-c0-uxa" secondAttribute="trailing" id="lJ3-Cs-ZNo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Br2-zc-ZEq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pp5-K0-1Fz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deK-E7-Ahx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="-598"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="sof-g0-X1q">
             <objects>
@@ -151,6 +180,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Take Quiz"/>
+                                <connections>
+                                    <segue destination="xeo-8v-ILs" kind="show" id="nnr-o9-ox7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFB-P4-5S8">
                                 <rect key="frame" x="164" y="67" width="87" height="51"/>
