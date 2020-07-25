@@ -75,21 +75,38 @@
             </objects>
             <point key="canvasLocation" x="-110" y="100"/>
         </scene>
-        <!--Item 2-->
+        <!--Workouts-->
         <scene sceneID="gX7-N9-3xr">
             <objects>
-                <viewController id="z2z-oB-fE9" sceneMemberID="viewController">
+                <viewController id="z2z-oB-fE9" customClass="WorkoutViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eXP-5p-3Kt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RaP-1W-9YF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="poW-uY-hZy"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="play.fill" catalog="system" id="poW-uY-hZy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8t-oQ-ptY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1935" y="425"/>
+        </scene>
+        <!--Meals-->
+        <scene sceneID="RHS-Yj-RGT">
+            <objects>
+                <viewController id="ttw-fp-1hb" customClass="MealsViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9E-5h-pVh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0i2-m1-rtb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meals" image="smiley.fill" catalog="system" id="gec-oO-q3C"/>
+                    <navigationItem key="navigationItem" id="KrM-6j-ePr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IB0-WN-nvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="76"/>
         </scene>
         <!--Settings-->
         <scene sceneID="sof-g0-X1q">
@@ -166,6 +183,7 @@
                         <segue destination="9Ud-bd-2id" kind="relationship" relationship="viewControllers" id="WM2-ae-QKE"/>
                         <segue destination="z2z-oB-fE9" kind="relationship" relationship="viewControllers" id="cFo-7a-Joz"/>
                         <segue destination="qwN-aV-ta6" kind="relationship" relationship="viewControllers" id="ahD-zq-brD"/>
+                        <segue destination="ttw-fp-1hb" kind="relationship" relationship="viewControllers" id="46v-EP-Lhf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uR5-AU-xvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,6 +193,8 @@
     </scenes>
     <resources>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="s.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="smiley.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
