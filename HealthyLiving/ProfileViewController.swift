@@ -12,6 +12,13 @@ class ProfileViewController: UIViewController, CanReceive {
     
     var profileData:[String]!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var goalLabel: UILabel!
+    @IBOutlet weak var workoutLevelLabel: UILabel!
+    @IBOutlet weak var targetedAreasLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,9 +37,15 @@ class ProfileViewController: UIViewController, CanReceive {
     //getting answer data from QuizVC
     func dataReceived(text: [String]) {
         profileData = text
-        print(profileData)
+        print(profileData!)
+        displayData()
     }
     
+    func displayData(){
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation
