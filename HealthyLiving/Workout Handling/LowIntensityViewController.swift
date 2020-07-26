@@ -1,14 +1,14 @@
 //
-//  WorkoutViewController.swift
+//  LowIntensityViewController.swift
 //  HealthyLiving
 //
-//  Created by J-Ro on 7/25/20.
+//  Created by Shrey Agarwal on 7/25/20.
 //  Copyright © 2020 HobbyHacksHackathon. All rights reserved.
 //
 
 import UIKit
 
-class WorkoutViewController: UIViewController {
+class LowIntensityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

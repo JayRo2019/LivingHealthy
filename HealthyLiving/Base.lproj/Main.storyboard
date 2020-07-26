@@ -82,7 +82,67 @@
                     <view key="view" contentMode="scaleToFill" id="eXP-5p-3Kt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customized Workouts!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TF-9U-PcN">
+                                <rect key="frame" x="0.0" y="74" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-T8-xIx">
+                                <rect key="frame" x="20" y="230" width="374" height="460"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsB-J7-g5W">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Idd-p1-KkR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="High Intensity"/>
+                                        <connections>
+                                            <segue destination="c6K-lN-5jv" kind="presentation" identifier="goToHigh" id="INL-bk-znD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsU-Hk-XSN">
+                                        <rect key="frame" x="0.0" y="170" width="374" height="120"/>
+                                        <color key="backgroundColor" red="0.058823529409999999" green="0.6705882353" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="I7M-et-HUe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Medium Intensity"/>
+                                        <connections>
+                                            <segue destination="e7R-RG-Dn9" kind="presentation" identifier="goToMid" id="JT5-yR-mRm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-Ma-Cph">
+                                        <rect key="frame" x="0.0" y="340" width="374" height="120"/>
+                                        <color key="backgroundColor" red="0.66509780190000001" green="0.95939344709999996" blue="0.80897887319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="KbM-yq-ZbQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Low Intensity"/>
+                                        <connections>
+                                            <segue destination="HST-32-UBU" kind="presentation" identifier="goToLow" id="Akg-Ky-QiZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3TF-9U-PcN" firstAttribute="leading" secondItem="RaP-1W-9YF" secondAttribute="leading" id="5cd-jo-r1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="3TF-9U-PcN" secondAttribute="trailing" id="6Y2-Mh-myZ"/>
+                            <constraint firstItem="iFR-T8-xIx" firstAttribute="leading" secondItem="RaP-1W-9YF" secondAttribute="leading" constant="20" id="Rm1-cl-m3m"/>
+                            <constraint firstItem="3TF-9U-PcN" firstAttribute="top" secondItem="RaP-1W-9YF" secondAttribute="top" constant="30" id="mCS-fg-91z"/>
+                            <constraint firstItem="RaP-1W-9YF" firstAttribute="trailing" secondItem="iFR-T8-xIx" secondAttribute="trailing" constant="20" id="zDk-Ib-ZQp"/>
+                            <constraint firstItem="iFR-T8-xIx" firstAttribute="top" secondItem="3TF-9U-PcN" secondAttribute="bottom" constant="120" id="zeE-fz-6Ma"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RaP-1W-9YF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Workouts" image="play.fill" catalog="system" id="poW-uY-hZy"/>
@@ -90,6 +150,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8t-oQ-ptY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1935" y="425"/>
+        </scene>
+        <!--Mid Intensity View Controller-->
+        <scene sceneID="Jb9-cz-WyY">
+            <objects>
+                <viewController id="e7R-RG-Dn9" customClass="MidIntensityViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anK-gS-I1R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nao-YK-wyi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ns-47-CRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="877"/>
+        </scene>
+        <!--Low Intensity View Controller-->
+        <scene sceneID="nxv-C5-vRj">
+            <objects>
+                <viewController id="HST-32-UBU" customClass="LowIntensityViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ZN-c4-bIm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5RK-Ic-BwK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufK-kn-qwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762" y="1284"/>
         </scene>
         <!--Meals-->
         <scene sceneID="RHS-Yj-RGT">
@@ -107,6 +197,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IB0-WN-nvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2835" y="76"/>
+        </scene>
+        <!--High Intensity View Controller-->
+        <scene sceneID="Shp-Pv-ncg">
+            <objects>
+                <viewController id="c6K-lN-5jv" customClass="HighIntensityViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SdO-Ye-JFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-iS-Xca">
+                                <rect key="frame" x="154" y="68" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dOb-Oc-12k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nZ-QE-XIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3722" y="236"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="R4k-nY-CL8">
@@ -197,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFj-AB-pFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="1105"/>
+            <point key="canvasLocation" x="1880" y="1200"/>
         </scene>
         <!--Profile-->
         <scene sceneID="G7e-Ee-00g">

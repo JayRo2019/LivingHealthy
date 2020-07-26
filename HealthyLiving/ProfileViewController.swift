@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol receiveFromProfile{
+    func canReceive(text:String)
+}
+
+
 class ProfileViewController: UIViewController, CanReceive {
     
     var profileData:[String]!

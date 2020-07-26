@@ -21,6 +21,9 @@
 		E126C193712535B0973517A4 /* Pods_HealthyLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710437BDF5E38CE689D42D5C /* Pods_HealthyLiving.framework */; };
 		E2A3A6A624CCE22500393722 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6A524CCE22500393722 /* QuizViewController.swift */; };
 		E2A3A6A924CCE60F00393722 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6A824CCE60F00393722 /* Questions.swift */; };
+		E2A3A6AC24CD193C00393722 /* HighIntensityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6AB24CD193C00393722 /* HighIntensityViewController.swift */; };
+		E2A3A6AE24CD194D00393722 /* MidIntensityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6AD24CD194D00393722 /* MidIntensityViewController.swift */; };
+		E2A3A6B024CD195C00393722 /* LowIntensityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6AF24CD195C00393722 /* LowIntensityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		B5E4F5752D7ABDE52CBA7DBE /* Pods-HealthyLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLiving.release.xcconfig"; path = "Target Support Files/Pods-HealthyLiving/Pods-HealthyLiving.release.xcconfig"; sourceTree = "<group>"; };
 		E2A3A6A524CCE22500393722 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		E2A3A6A824CCE60F00393722 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		E2A3A6AB24CD193C00393722 /* HighIntensityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighIntensityViewController.swift; sourceTree = "<group>"; };
+		E2A3A6AD24CD194D00393722 /* MidIntensityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidIntensityViewController.swift; sourceTree = "<group>"; };
+		E2A3A6AF24CD195C00393722 /* LowIntensityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowIntensityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,12 @@
 		A91278A424CC753900821CB1 /* HealthyLiving */ = {
 			isa = PBXGroup;
 			children = (
+				E2A3A6AA24CD191200393722 /* Workout Handling */,
 				E2A3A6A724CCE53900393722 /* Quiz Handling */,
 				A9934AF224CC925A006FA39A /* ProfileViewController.swift */,
 				A91278A524CC753900821CB1 /* AppDelegate.swift */,
 				A91278A724CC753900821CB1 /* SceneDelegate.swift */,
 				A91278A924CC753900821CB1 /* ViewController.swift */,
-				A9934AF624CCC7B4006FA39A /* WorkoutViewController.swift */,
 				A9934AF824CCCA72006FA39A /* MealsViewController.swift */,
 				A9934AF424CC92C0006FA39A /* SettingsViewController.swift */,
 				A91278AB24CC753900821CB1 /* Main.storyboard */,
@@ -118,6 +124,17 @@
 				E2A3A6A824CCE60F00393722 /* Questions.swift */,
 			);
 			path = "Quiz Handling";
+			sourceTree = "<group>";
+		};
+		E2A3A6AA24CD191200393722 /* Workout Handling */ = {
+			isa = PBXGroup;
+			children = (
+				A9934AF624CCC7B4006FA39A /* WorkoutViewController.swift */,
+				E2A3A6AB24CD193C00393722 /* HighIntensityViewController.swift */,
+				E2A3A6AD24CD194D00393722 /* MidIntensityViewController.swift */,
+				E2A3A6AF24CD195C00393722 /* LowIntensityViewController.swift */,
+			);
+			path = "Workout Handling";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,9 @@
 				A91278A624CC753900821CB1 /* AppDelegate.swift in Sources */,
 				E2A3A6A624CCE22500393722 /* QuizViewController.swift in Sources */,
 				A9934AF324CC925A006FA39A /* ProfileViewController.swift in Sources */,
+				E2A3A6B024CD195C00393722 /* LowIntensityViewController.swift in Sources */,
+				E2A3A6AE24CD194D00393722 /* MidIntensityViewController.swift in Sources */,
+				E2A3A6AC24CD193C00393722 /* HighIntensityViewController.swift in Sources */,
 				A9934AF924CCCA72006FA39A /* MealsViewController.swift in Sources */,
 				A9934AF524CC92C0006FA39A /* SettingsViewController.swift in Sources */,
 				A91278A824CC753900821CB1 /* SceneDelegate.swift in Sources */,
