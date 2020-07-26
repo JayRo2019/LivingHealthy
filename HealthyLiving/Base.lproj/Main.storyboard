@@ -206,17 +206,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-iS-Xca">
-                                <rect key="frame" x="154" y="68" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Intensity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-iS-Xca">
+                                <rect key="frame" x="0.0" y="35" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xSY-CU-2vo">
+                                <rect key="frame" x="0.0" y="175.5" width="414" height="161.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVL-MM-yx5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zib-t2-fFt">
+                                        <rect key="frame" x="0.0" y="70.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ4-ca-Yti">
+                                        <rect key="frame" x="0.0" y="141" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dOb-Oc-12k" firstAttribute="trailing" secondItem="Eet-iS-Xca" secondAttribute="trailing" id="0on-jn-ZZL"/>
+                            <constraint firstItem="Eet-iS-Xca" firstAttribute="leading" secondItem="dOb-Oc-12k" secondAttribute="leading" id="5Wg-nV-FDl"/>
+                            <constraint firstItem="Eet-iS-Xca" firstAttribute="top" secondItem="dOb-Oc-12k" secondAttribute="top" constant="35" id="8XB-F2-hmM"/>
+                            <constraint firstItem="xSY-CU-2vo" firstAttribute="top" secondItem="Eet-iS-Xca" secondAttribute="bottom" constant="120" id="AtI-Ny-jDh"/>
+                            <constraint firstItem="xSY-CU-2vo" firstAttribute="leading" secondItem="dOb-Oc-12k" secondAttribute="leading" id="MQB-cu-FWn"/>
+                            <constraint firstItem="dOb-Oc-12k" firstAttribute="trailing" secondItem="xSY-CU-2vo" secondAttribute="trailing" id="gd5-BU-mAP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dOb-Oc-12k"/>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="BVL-MM-yx5" id="Jfo-Sk-DHM"/>
+                        <outlet property="label2" destination="Zib-t2-fFt" id="QWK-J1-Cuv"/>
+                        <outlet property="label3" destination="vQ4-ca-Yti" id="aPZ-zO-crt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nZ-QE-XIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

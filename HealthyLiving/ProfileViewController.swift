@@ -12,7 +12,7 @@ import UIKit
 class ProfileViewController: UIViewController, CanReceive {
     
     var profileData:[String]!
-    static var areas:String
+    static var areas:String!
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!

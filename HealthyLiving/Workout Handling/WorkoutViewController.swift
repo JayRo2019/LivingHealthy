@@ -10,19 +10,12 @@ import UIKit
 
 class WorkoutViewController: UIViewController {
     
-    var text:String? = ProfileViewController.areas
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        checkInfo()
-    }
-    func checkInfo(){
-        if text == "Arms"{
-            
-        }
-        
     }
     
     
