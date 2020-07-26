@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController, CanReceive {
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var workoutLevelLabel: UILabel!
     @IBOutlet weak var targetedAreasLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,16 +38,33 @@ class ProfileViewController: UIViewController, CanReceive {
     //getting answer data from QuizVC
     func dataReceived(text: [String]) {
         profileData = text
-        print(profileData!)
         displayData()
     }
     
     func displayData(){
-        
+        nameLabel.text = "\(profileData[0])'s Stats:"
+        weightLabel.text = "Weight: \(profileData[1]) kgs"
+        heightLabel.text = "Height: \(profileData[2]) cm"
+        bmiLabel.text = calculateBMI()
+        workoutLevelLabel.text = "Workout goal: \(profileData[3])"
+        targetedAreasLabel.text = "Targeted Area: \(profileData[4])"
+        goalLabel.text = "\"\(profileData[5])\""
         
         
     }
 
+    func calculateBMI() -> String{
+        
+        let kg = Double(profileData[1])!
+        let meters = (Double(profileData[2])!)/100.0
+        let meters2 = pow(meters, 2)
+        let bmi = kg/meters2
+        
+        return "BMI: \(bmi)"
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

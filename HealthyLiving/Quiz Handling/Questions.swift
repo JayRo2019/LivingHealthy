@@ -12,7 +12,7 @@ class Questions {
     
     //constant set of questions
     let questions = ["What is your full name?",
-                     "What is your weight(in pounds)?",
+                     "What is your weight(in kg)?",
                      "What is your height(in cm)?",
                      "What are your workout goals?",
                      "Which areas of your body are you targeting?",
