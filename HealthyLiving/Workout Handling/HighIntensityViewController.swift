@@ -30,6 +30,9 @@ class HighIntensityViewController: UIViewController {
         checkInfo()
     }
     
+    @IBAction func backPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     func checkInfo(){
         if text == "Arms"{
             displayInfo(area: .arms)
@@ -45,6 +48,7 @@ class HighIntensityViewController: UIViewController {
         label1.text = dataModel.highArms[0]
         label2.text = dataModel.highArms[1]
         label3.text = dataModel.highArms[2]
+    
         }
         
     }
