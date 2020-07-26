@@ -8,14 +8,11 @@
 
 import UIKit
 
-protocol receiveFromProfile{
-    func canReceive(text:String)
-}
-
 
 class ProfileViewController: UIViewController, CanReceive {
     
     var profileData:[String]!
+    static var areas:String
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -47,6 +44,7 @@ class ProfileViewController: UIViewController, CanReceive {
     }
     
     func displayData(){
+        ProfileViewController.areas = profileData[4]
         nameLabel.text = "\(profileData[0])'s Stats:"
         weightLabel.text = "Weight: \(profileData[1]) kgs"
         heightLabel.text = "Height: \(profileData[2]) cm"

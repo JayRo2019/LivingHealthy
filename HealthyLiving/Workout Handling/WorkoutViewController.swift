@@ -8,19 +8,21 @@
 
 import UIKit
 
-class WorkoutViewController: UIViewController, receiveFromProfile {
+class WorkoutViewController: UIViewController {
     
-    var text:String!
+    var text:String? = ProfileViewController.areas
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        checkInfo()
     }
-    
-    func canReceive(text: String) {
-        self.text = text
+    func checkInfo(){
+        if text == "Arms"{
+            
+        }
+        
     }
     
     

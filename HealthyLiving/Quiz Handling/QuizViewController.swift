@@ -12,6 +12,7 @@ protocol CanReceive {
     func dataReceived(text: [String])
 }
 
+
 class QuizViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
