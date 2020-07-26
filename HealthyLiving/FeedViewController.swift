@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -79,7 +80,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
         cell.userEmailLabel.text = userEmailArray[indexPath.row]
         cell.likeLabel.text = String(likeArray[indexPath.row])
-        cell.userImageView.image = UIImage(named: "tapToSelect.png")
+        cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
         return cell
     }
     
