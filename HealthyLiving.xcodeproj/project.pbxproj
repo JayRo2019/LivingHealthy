@@ -18,6 +18,7 @@
 		A9934AF524CC92C0006FA39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AF424CC92C0006FA39A /* SettingsViewController.swift */; };
 		A9934AF724CCC7B4006FA39A /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AF624CCC7B4006FA39A /* WorkoutViewController.swift */; };
 		A9934AF924CCCA72006FA39A /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AF824CCCA72006FA39A /* MealsViewController.swift */; };
+		A9934AFB24CDDB4B006FA39A /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9934AFA24CDDB4B006FA39A /* UploadViewController.swift */; };
 		E126C193712535B0973517A4 /* Pods_HealthyLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710437BDF5E38CE689D42D5C /* Pods_HealthyLiving.framework */; };
 		E2A3A6A624CCE22500393722 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6A524CCE22500393722 /* QuizViewController.swift */; };
 		E2A3A6A924CCE60F00393722 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6A824CCE60F00393722 /* Questions.swift */; };
@@ -44,6 +45,7 @@
 		A9934AF424CC92C0006FA39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A9934AF624CCC7B4006FA39A /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		A9934AF824CCCA72006FA39A /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		A9934AFA24CDDB4B006FA39A /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B5E4F5752D7ABDE52CBA7DBE /* Pods-HealthyLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLiving.release.xcconfig"; path = "Target Support Files/Pods-HealthyLiving/Pods-HealthyLiving.release.xcconfig"; sourceTree = "<group>"; };
 		E2A3A6A524CCE22500393722 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		E2A3A6A824CCE60F00393722 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				A91278A724CC753900821CB1 /* SceneDelegate.swift */,
 				A91278A924CC753900821CB1 /* ViewController.swift */,
 				A9934AF824CCCA72006FA39A /* MealsViewController.swift */,
+				A9934AFA24CDDB4B006FA39A /* UploadViewController.swift */,
 				E2EE622F24CDAF9A00524B38 /* BreakfastViewController.swift */,
 				A9934AF424CC92C0006FA39A /* SettingsViewController.swift */,
 				A91278AB24CC753900821CB1 /* Main.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A3A6A924CCE60F00393722 /* Questions.swift in Sources */,
+				A9934AFB24CDDB4B006FA39A /* UploadViewController.swift in Sources */,
 				A9934AF724CCC7B4006FA39A /* WorkoutViewController.swift in Sources */,
 				A91278AA24CC753900821CB1 /* ViewController.swift in Sources */,
 				A91278A624CC753900821CB1 /* AppDelegate.swift in Sources */,

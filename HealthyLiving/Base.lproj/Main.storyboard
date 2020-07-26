@@ -508,6 +508,22 @@
             </objects>
             <point key="canvasLocation" x="1880" y="1200"/>
         </scene>
+        <!--Feed-->
+        <scene sceneID="nMP-UU-Lx8">
+            <objects>
+                <viewController id="DMM-fe-Wm5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DfA-gH-2qE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RCl-IH-MbA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="rt0-dX-JXt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEL-YK-jDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="-599"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="G7e-Ee-00g">
             <objects>
@@ -620,6 +636,48 @@
             </objects>
             <point key="canvasLocation" x="1934.7826086956522" y="-224.33035714285714"/>
         </scene>
+        <!--Upload-->
+        <scene sceneID="xfy-1T-rJQ">
+            <objects>
+                <viewController id="3lA-7w-YOg" customClass="UploadViewController" customModule="HealthyLiving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIh-hO-pBL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter comment here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aho-D4-nfC">
+                                <rect key="frame" x="20" y="390" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH8-8D-gYr">
+                                <rect key="frame" x="173" y="441" width="69" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="3lA-7w-YOg" eventType="touchUpInside" id="I3f-Vi-Xs4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tapToSelect" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-i4-7bf">
+                                <rect key="frame" x="-51" y="25" width="516" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="93z-uH-JcD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="XhD-7a-l1Y"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="aho-D4-nfC" id="WSY-g1-2dL"/>
+                        <outlet property="imageView" destination="3b4-i4-7bf" id="5Id-4r-69J"/>
+                        <outlet property="uploadButtonClicked" destination="uH8-8D-gYr" id="VUt-Pz-FQ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USI-qm-J1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.79710144927537" y="-599.33035714285711"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TCC-UZ-7IJ">
             <objects>
@@ -635,7 +693,9 @@
                         <segue destination="9Ud-bd-2id" kind="relationship" relationship="viewControllers" id="WM2-ae-QKE"/>
                         <segue destination="z2z-oB-fE9" kind="relationship" relationship="viewControllers" id="cFo-7a-Joz"/>
                         <segue destination="ttw-fp-1hb" kind="relationship" relationship="viewControllers" id="46v-EP-Lhf"/>
+                        <segue destination="DMM-fe-Wm5" kind="relationship" relationship="viewControllers" id="X58-oO-pdr"/>
                         <segue destination="qwN-aV-ta6" kind="relationship" relationship="viewControllers" id="ahD-zq-brD"/>
+                        <segue destination="3lA-7w-YOg" kind="relationship" relationship="viewControllers" id="M6r-9G-f5C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uR5-AU-xvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -645,6 +705,7 @@
     </scenes>
     <resources>
         <image name="benchpress" width="80.5" height="69.5"/>
+        <image name="f.circle.fill" catalog="system" width="128" height="121"/>
         <image name="image10" width="256" height="256"/>
         <image name="image25" width="200" height="134.5"/>
         <image name="lyingtricepextension" width="180" height="120"/>
@@ -653,5 +714,7 @@
         <image name="reversecurls" width="216.5" height="128.5"/>
         <image name="s.circle.fill" catalog="system" width="128" height="121"/>
         <image name="smiley.fill" catalog="system" width="128" height="121"/>
+        <image name="tapToSelect" width="960" height="720"/>
+        <image name="u.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
