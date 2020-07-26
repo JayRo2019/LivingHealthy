@@ -10,6 +10,10 @@ import UIKit
 
 class HighIntensityViewController: UIViewController {
 
+
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -27,6 +31,10 @@ class HighIntensityViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        image1.alpha = 0
+        image2.alpha = 0
+        image3.alpha = 0
         checkInfo()
     }
     
@@ -48,7 +56,9 @@ class HighIntensityViewController: UIViewController {
         label1.text = dataModel.highArms[0]
         label2.text = dataModel.highArms[1]
         label3.text = dataModel.highArms[2]
-    
+        image1.alpha = 1
+        image2.alpha = 1
+        image3.alpha = 1
         }
         
     }
