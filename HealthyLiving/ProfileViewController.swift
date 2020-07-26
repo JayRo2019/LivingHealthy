@@ -56,7 +56,7 @@ class ProfileViewController: UIViewController, CanReceive {
         
     }
 
-    func calculateBMI() -> String{
+    func calculateBMI() -> String {
         
         let kg = Double(profileData[1])!
         let meters = (Double(profileData[2])!)/100.0

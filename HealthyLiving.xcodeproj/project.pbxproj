@@ -25,6 +25,7 @@
 		E2A3A6AE24CD194D00393722 /* MidIntensityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6AD24CD194D00393722 /* MidIntensityViewController.swift */; };
 		E2A3A6B024CD195C00393722 /* LowIntensityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3A6AF24CD195C00393722 /* LowIntensityViewController.swift */; };
 		E2EE622E24CD353A00524B38 /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE622D24CD353A00524B38 /* WorkoutData.swift */; };
+		E2EE623024CDAF9A00524B38 /* BreakfastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE622F24CDAF9A00524B38 /* BreakfastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E2A3A6AD24CD194D00393722 /* MidIntensityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidIntensityViewController.swift; sourceTree = "<group>"; };
 		E2A3A6AF24CD195C00393722 /* LowIntensityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowIntensityViewController.swift; sourceTree = "<group>"; };
 		E2EE622D24CD353A00524B38 /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		E2EE622F24CDAF9A00524B38 /* BreakfastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				A91278A724CC753900821CB1 /* SceneDelegate.swift */,
 				A91278A924CC753900821CB1 /* ViewController.swift */,
 				A9934AF824CCCA72006FA39A /* MealsViewController.swift */,
+				E2EE622F24CDAF9A00524B38 /* BreakfastViewController.swift */,
 				A9934AF424CC92C0006FA39A /* SettingsViewController.swift */,
 				A91278AB24CC753900821CB1 /* Main.storyboard */,
 				A91278AE24CC753E00821CB1 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				E2A3A6AE24CD194D00393722 /* MidIntensityViewController.swift in Sources */,
 				E2A3A6AC24CD193C00393722 /* HighIntensityViewController.swift in Sources */,
 				E2EE622E24CD353A00524B38 /* WorkoutData.swift in Sources */,
+				E2EE623024CDAF9A00524B38 /* BreakfastViewController.swift in Sources */,
 				A9934AF924CCCA72006FA39A /* MealsViewController.swift in Sources */,
 				A9934AF524CC92C0006FA39A /* SettingsViewController.swift in Sources */,
 				A91278A824CC753900821CB1 /* SceneDelegate.swift in Sources */,
